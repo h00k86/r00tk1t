@@ -2,8 +2,8 @@
 The idea is to create a little(as little as possibile) program that download the module source code, compile it, insert and hidden itself.
 
 
-## FOR EDUCATION ONLY
-Use it only for educational purpose
+## FOR EDUCATIONAL PURPOSE ONLY
+Use it ONLY for educational purpose
 
 ## REQ
 - Root access
@@ -13,8 +13,8 @@ Use it only for educational purpose
 
 ## MAIN FUNCTIONALITY
 
-- [ ] HIDDEN -> it's not visibile from /proc /sys or lsmod
-- [ ]  
+- [ ] HIDDEN -> Not visibile from /proc /sys or lsmod
+- [ ] 
 
 
 
