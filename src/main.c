@@ -1,9 +1,9 @@
 
 
-#include "./config.h"
 #include <linux/kernel.h>
 #include <linux/module.h>
 
+#include "config.h"
 
 static int __init my_init(void) { 
 	
