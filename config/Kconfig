@@ -1,0 +1,13 @@
+
+
+menu "RootKit configuration"
+
+config RK_REMOTE_ADDR
+	string "Remote address"
+	default "127.0.0.1"
+
+config RK_REMOTE_PORT
+	int "Remote port"
+	default 0
+
+endmenu
