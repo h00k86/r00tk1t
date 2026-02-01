@@ -5,16 +5,17 @@ obj-m := src/main.o
 
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
+BUILD_DIR := $(PWD)/build
+
 
 ccflags-y := -I$(PWD)/include
 
-BUILD_DIR := $(PWD)/build
 
 
 
 all:
+	$(MAKE) -C $(KDIR) M=$(PWD)  modules
 	@mkdir -p $(BUILD_DIR)
-	$(MAKE) O=$(BUILD_DIR) -C $(KDIR) M=$(PWD)  modules
 
 clean: 
 	$(MAKE) -C $(KDIR) M=$(PWD) clean
