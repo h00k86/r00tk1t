@@ -7,13 +7,13 @@
 
 static int __init my_init(void) { 
 	
-	printk(KERN_INFO "module inserted");	
+	printk(KERN_INFO "module inserted\n");	
 	return 0;
 }
 
 static void __exit my_exit(void) {
 
-	printk(KERN_INFO "module removed");	
+	printk(KERN_INFO "module removed\n");	
 }
 
 

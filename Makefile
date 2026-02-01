@@ -6,7 +6,7 @@ obj-m := src/main.o
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
 
-EXTRA_CFLAGS := -I$(PWD)/include
+ccflags-y := -I$(PWD)/include
 
 all:
 	$(MAKE) -C $(KDIR) M=$(PWD)  modules
