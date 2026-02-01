@@ -10,7 +10,8 @@ Use it ONLY for educational purpose
 - Dependency:
     - gcc (or another C compiler)
     - linux header
-    - 
+    - sudo
+
 
 
 
