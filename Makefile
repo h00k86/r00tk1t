@@ -1,11 +1,12 @@
 
 
-obj-m := main.o
+obj-m := src/main.o
 
+
+KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
-KDIR := $(PWD)/linux-6.17
 
-
+EXTRA_CFLAGS := -I$(PWD)/include
 
 all:
 	$(MAKE) -C $(KDIR) M=$(PWD)  modules

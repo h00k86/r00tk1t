@@ -1,6 +1,6 @@
 
 
-#include "include/config.h"
+#include "./config.h"
 #include <linux/kernel.h>
 #include <linux/module.h>
 

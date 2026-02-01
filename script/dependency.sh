@@ -26,8 +26,8 @@ install_dependency(){
 		arch)
 			sudo pacman -Ss gcc make linux-headers
 			;;
-		guix)  
-			guix install  gcc make linux-libre-headers
+		debian)  
+			sudo apt install build-essential linux-headers-$(uname -r)
 			;;
 		*)
 			echo "Set your own distro package manager"
