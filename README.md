@@ -14,9 +14,14 @@ Use it ONLY for educational purpose
 
 
 
+
+
 ## MAIN FUNCTIONALITY
 
 - [ ] HIDDEN -> Not visibile from /proc /sys or lsmod
 - [ ] PERSISTENCE -> Always active after reboot
 
+## TEST
+ -- [] VM's:
+    - guix
 
