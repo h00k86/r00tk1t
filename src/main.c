@@ -3,7 +3,7 @@
 #include <linux/kernel.h>
 #include <linux/module.h>
 
-#include "config.h"
+#include "../include/config.h"
 
 static int __init my_init(void) { 
 	
