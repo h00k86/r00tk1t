@@ -13,11 +13,10 @@ BUILD_DIR := $(PWD)/build
 
 
 all:
-	$(MAKE) -C $(KDIR) M=$(BUILD_DIR)  modules
 	@mkdir -p $(BUILD_DIR)
-	@cp src/*.ko $(BUILD_DIR)/
+	$(MAKE) O=$(BUILD_DIR) -C $(KDIR) M=$(PWD)  modules
 
 clean: 
-	$(MAKE) -C $(KDIR) M=$(BUILD_DIR) clean
+	$(MAKE) -C $(KDIR) M=$(PWD) clean
 	@rm -rf $(BUILD_DIR)
 
