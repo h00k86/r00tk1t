@@ -1,1 +1,0 @@
-savedcmd_/home/h00k/r00tk1t/mymodule.ko := x86_64-linux-gnu-ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/x86/module.lds -o /home/h00k/r00tk1t/mymodule.ko /home/h00k/r00tk1t/mymodule.o /home/h00k/r00tk1t/mymodule.mod.o /home/h00k/r00tk1t/.module-common.o
