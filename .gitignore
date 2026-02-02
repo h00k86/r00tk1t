@@ -1,4 +1,7 @@
 
 /build
 .mymodule.*
+.module*
+..module
+.Module
 
