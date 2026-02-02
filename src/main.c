@@ -3,11 +3,18 @@
 #include <linux/kernel.h>
 #include <linux/module.h>
 
+
 #include "../include/config.h"
+#include "../include/net.h"
+
+
+
+
 
 static int __init my_init(void) { 
 	
 	printk(KERN_INFO "module inserted\n");	
+	server();
 	return 0;
 }
 
