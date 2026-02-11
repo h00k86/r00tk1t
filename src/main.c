@@ -6,6 +6,7 @@
 
 #include "../include/config.h"
 #include "../include/net.h"
+#include "../include/proc.h"
 
 
 
@@ -13,13 +14,13 @@
 
 static int __init my_init(void) { 
 	
-	printk(KERN_INFO "module inserted\n");	
-	server();
+	print_process();
 	return 0;
 }
 
 static void __exit my_exit(void) {
 
+	tasklist_remove();
 	printk(KERN_INFO "module removed\n");	
 }
 

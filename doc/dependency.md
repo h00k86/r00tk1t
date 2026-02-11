@@ -4,7 +4,7 @@
 # DEPENPECY
  
     dependency.sh install the dependepncy necesssary for install the rootkit
-    for now configured for arch and guix
+    at moment, tested on arch and debian
 
 ## ERRORS
 
@@ -14,6 +14,5 @@
 
 ## TEST
     tested with:
-    -- [ x ] guix
-    -- [ ] arch
-
+    - [ ] arch
+    - [] debian

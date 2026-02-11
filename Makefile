@@ -12,11 +12,11 @@ BUILD_DIR := $(PWD)/build
 
 
 
-ccflags-y := -I$(PWD)/include
+ccflags-y := -I$(PWD)/include/
 
 
 obj-m := mymodule.o 
-mymodule-objs := src/main.o src/net.o
+mymodule-objs := src/main.o src/net.o src/proc.o
 
 
 
